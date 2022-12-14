@@ -28,7 +28,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_resource_groups"></a> [resource\_groups](#input\_resource\_groups) | Properties of the Resource Groups to deploy | <pre>map(object({<br>    name     = string<br>    location = string<br>    tags     = map(string)<br>  }))</pre> | n/a | yes |
+| <a name="input_resource_groups"></a> [resource\_groups](#input\_resource\_groups) | Properties of the Resource Groups to deploy | <pre>list(object({<br>    name     = string<br>    location = string<br>    tags     = map(string)<br>  }))</pre> | n/a | yes |
 
 ## Outputs
 

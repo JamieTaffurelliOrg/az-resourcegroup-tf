@@ -1,5 +1,5 @@
 variable "resource_groups" {
-  type = map(object({
+  type = list(object({
     name     = string
     location = string
     tags     = map(string)
