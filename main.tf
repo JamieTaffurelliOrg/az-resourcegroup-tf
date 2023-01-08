@@ -3,12 +3,7 @@ resource "azurerm_resource_group" "resource_groups" {
   for_each = { for rg in var.resource_groups : rg.name => rg }
   name     = each.key
   location = each.value["location"]
-
-  lifecycle {
-    prevent_destroy = true
-  }
-
-  tags = each.value["tags"]
+  tags     = each.value["tags"]
 }
 
 resource "azurerm_management_lock" "resource_groups" {
