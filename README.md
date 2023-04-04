@@ -4,7 +4,7 @@
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.3.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.4.0 |
 | <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 3.20 |
 
 ## Providers
@@ -28,7 +28,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_resource_groups"></a> [resource\_groups](#input\_resource\_groups) | Properties of the Resource Groups to deploy | <pre>map(object({<br>    name     = string<br>    location = string<br>    tags     = map(string)<br>  }))</pre> | n/a | yes |
+| <a name="input_resource_groups"></a> [resource\_groups](#input\_resource\_groups) | Properties of the Resource Groups to deploy | <pre>list(object({<br>    name     = string<br>    location = string<br>    tags     = map(string)<br>  }))</pre> | n/a | yes |
 
 ## Outputs
 
